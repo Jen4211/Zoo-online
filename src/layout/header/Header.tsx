@@ -1,21 +1,17 @@
-import {FC} from 'react';
-import styled from "styled-components";
-import {theme} from "../../styles/Theme";
-import {Logo} from "../../components/logo/Logo";
-import {DesktopMenu} from "./desktopMenu/DesktopMenu";
+import { FC } from 'react';
+import styled from 'styled-components';
+import { theme } from '../../styles/Theme';
+import { Logo } from '../../components/logo/Logo';
+import { DesktopMenu } from './desktopMenu/DesktopMenu';
 
-
-
-const dataMenuItems = [
-    "About", "Map", "Zoos", "Contact us", "Designed by ©"
-]
+const dataMenuItems = ['About', 'Map', 'Zoos', 'Contact us', 'Designed by ©'];
 export const Header: FC = () => {
-    return (
-        <StyledHeader>
-            <Logo/>
-            <DesktopMenu menuItems={dataMenuItems}/>
-        </StyledHeader>
-    );
+  return (
+    <StyledHeader>
+      <Logo />
+      <DesktopMenu menuItems={dataMenuItems} />
+    </StyledHeader>
+  );
 };
 
 const StyledHeader = styled.header`
@@ -27,5 +23,5 @@ const StyledHeader = styled.header`
   padding-left: 220px;
   background: ${theme.colors.bgHeader.primaryBg};
   position: fixed;
-  z-index: 2;
-`
+  z-index: 10;
+`;

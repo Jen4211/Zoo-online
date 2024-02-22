@@ -1,18 +1,19 @@
-import React from 'react';
-import styled from "styled-components";
-import bgImg from "../../../../../Zoo-online/src/assets/bgImg/Giant-Panda.webp";
-import {theme} from "../../../styles/Theme";
-import {Button} from "../../../components/button/Button";
-export const Main: React.FC = () => {
-    return (
-        <StyledMain>
-            <TitleContainer>
-                <Title>Watch your <span>favorite</span> animal online</Title>
-                <Button>What online</Button>
-            </TitleContainer>
-
-        </StyledMain>
-    );
+import React, { FC } from 'react';
+import styled from 'styled-components';
+import bgImg from '../../../assets/bgImg/Giant-Panda.webp';
+import { theme } from '../../../styles/Theme';
+import { Button } from '../../../components/button/Button';
+export const Main: FC = () => {
+  return (
+    <StyledMain>
+      <TitleContainer>
+        <Title>
+          Watch your <span>favorite</span> animal online
+        </Title>
+        <Button>What online</Button>
+      </TitleContainer>
+    </StyledMain>
+  );
 };
 
 const StyledMain = styled.section`
@@ -21,8 +22,7 @@ const StyledMain = styled.section`
   background: url(${bgImg}) no-repeat center / cover;
   position: relative;
   z-index: 1;
-
-`
+`;
 const TitleContainer = styled.div`
   position: absolute;
   width: 465px;
@@ -33,10 +33,10 @@ const TitleContainer = styled.div`
   top: 92px;
   padding: 74px 0 0 74px;
   text-align: center;
-  ${Button}{
+  ${Button} {
     margin-top: 60px;
   }
-`
+`;
 const Title = styled.h2`
   font-weight: 700;
   font-size: 106px;
@@ -47,4 +47,4 @@ const Title = styled.h2`
   span {
     color: ${theme.colors.accentBg};
   }
-`
+`;

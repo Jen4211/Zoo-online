@@ -1,5 +1,5 @@
-import {createGlobalStyle} from "styled-components";
-import {theme} from "./Theme";
+import { createGlobalStyle } from 'styled-components';
+import { theme } from './Theme';
 
 export const GlobalStyle = createGlobalStyle`
   *,
@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-
+    overflow-x: hidden;
     margin: 0;
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -29,16 +29,24 @@ export const GlobalStyle = createGlobalStyle`
   ul {
     list-style: none;
   }
+
   section {
-    
+
   }
-  
+
   h3 {
     font-weight: 400;
     font-size: 48px;
     line-height: 120%
   }
+
   h4 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+  }
+
+  h5 {
     font-size: 24px;
   }
 
@@ -46,6 +54,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 16px;
 
   }
+
   button {
     cursor: pointer;
     border: none;
@@ -53,4 +62,4 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     line-height: 140%;
   }
-`
+`;
