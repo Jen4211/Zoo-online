@@ -1,12 +1,12 @@
 import { FC } from 'react';
 import styled from 'styled-components';
-import { Container } from '../../../components/Container';
-import { Photo } from '../../../components/photo/Photo';
+import { Container } from '@/components/Container';
+import { Photo } from '@/components/photo/Photo';
 import photoMen from '../../../assets/bgImg/bamboo-cap.webp';
-import { TitleSection } from '../../../components/TitleSection';
-import { Text } from '../../../components/Text';
-import { theme } from '../../../styles/Theme';
-import { TitleText } from '../../../components/TitleText';
+import { TitleSection } from '@/components/TitleSection';
+import { Text } from '@/components/Text';
+import { theme } from '@/styles/Theme';
+import { TitleText } from '@/components/TitleText';
 import { SliderAnimals } from './sliderAnimal/SliderAnimals';
 import panda from '../../../assets/animalsPhotoSlider/panda.webp';
 import eagle from '../../../assets/animalsPhotoSlider/eagle.webp';
@@ -18,7 +18,7 @@ import sloth from '../../../assets/animalsPhotoSlider/sloth.webp';
 import flower1 from '../../../assets/flowers/flower_foto1.png';
 import flower2 from '../../../assets/flowers/palm_foto.png';
 import flower3 from '../../../assets/flowers/strelitzia 1.png';
-import { Button } from '../../../components/button/Button';
+import { Button } from '@/components/button/Button';
 
 export type DataAnimalsType = {
   name: string;

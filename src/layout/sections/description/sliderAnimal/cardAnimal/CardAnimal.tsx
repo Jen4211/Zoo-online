@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { theme } from '../../../../../styles/Theme';
-import { Photo } from '../../../../../components/photo/Photo';
-import { Text } from '../../../../../components/Text';
-import { Icon } from '../../../../../components/icon/Icon';
+import { theme } from '@/styles/Theme';
+import { Photo } from '@/components/photo/Photo';
+import { Text } from '@/components/Text';
+import { Icon } from '@/components/icon/Icon';
 
 type CardAnimalPropsType = {
   url: string;

@@ -1,14 +1,14 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { theme } from '../../../styles/Theme';
-import { Container } from '../../../components/Container';
-import { TitleSection } from '../../../components/TitleSection';
-import { TitleText } from '../../../components/TitleText';
-import { Text } from '../../../components/Text';
-import { TitleParagraph } from '../../../components/TitleParagraph';
-import { Button } from '../../../components/button/Button';
+import { theme } from '@/styles/Theme';
+import { Container } from '@/components/Container';
+import { TitleSection } from '@/components/TitleSection';
+import { TitleText } from '@/components/TitleText';
+import { Text } from '@/components/Text';
+import { TitleParagraph } from '@/components/TitleParagraph';
+import { Button } from '@/components/button/Button';
 import { CardInstruction } from './cardInstruction/CardInstruction';
-import arrayDesktop from '../../../assets/arrays/Vector.svg';
+import arrayDesktop from '@/assets/arrays/Vector.svg';
 
 const dataInstructionCard = [
   { iconId: 'pay', width: '108', height: '60', viewBox: '0 0 108 60', text: 'Pay with card' },

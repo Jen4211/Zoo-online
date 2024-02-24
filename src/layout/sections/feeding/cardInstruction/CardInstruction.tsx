@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { theme } from '../../../../styles/Theme';
-import { Icon } from '../../../../components/icon/Icon';
-import { Text } from '../../../../components/Text';
+import { theme } from '@/styles/Theme';
+import { Icon } from '@/components/icon/Icon';
+import { Text } from '@/components/Text';
 
 type CardInstructionPropsType = {
   iconId: string;

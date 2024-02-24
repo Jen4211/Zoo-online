@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import bgImg from '../../../assets/bgImg/Giant-Panda.webp';
-import { theme } from '../../../styles/Theme';
-import { Button } from '../../../components/button/Button';
+import { theme } from '@/styles/Theme';
+import { Button } from '@/components/button/Button';
 export const Main: FC = () => {
   return (
     <StyledMain>
