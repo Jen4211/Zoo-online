@@ -12,11 +12,17 @@ export const theme = {
     font: {
       primary: '#ffffff',
       secondary: '#333B41',
+      gray: '#767474',
       accent: '#FE9013',
     },
     feedingBg: {
       primaryFeed: '#FED290',
       secondaryFeed: '#ffdbff',
+    },
+    testimonialBg: '#F1F3F2',
+    border: {
+      background:
+        ' linear-gradient(340deg, rgba(254, 189, 171, 0.74) 6.48%, rgba(243, 169, 248, 0.66) 22.51%, #b39de5 45.57%, #b6daf5 82.33%, #d4ecf6 99.1%)',
     },
     accentBg: '#FFEE2E',
   },

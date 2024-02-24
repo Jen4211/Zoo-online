@@ -2,8 +2,8 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { DataAnimalsType } from '../Description';
 import { CardAnimal } from './cardAnimal/CardAnimal';
-import { Icon } from '../../../../components/icon/Icon';
-import { theme } from '../../../../styles/Theme';
+import { Icon } from '@/components/icon/Icon';
+import { theme } from '@/styles/Theme';
 
 type SliderAnimalsPropsType = {
   dataAnimals: DataAnimalsType[];
