@@ -2,7 +2,6 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { SlidTestimonial } from '@/layout/sections/testimonials/testimonialSlider/slidTestimonial/SlidTestimonial';
 import { TestimonialCardsType } from '@/layout/sections/testimonials/Testimonials';
-import { theme } from '@/styles/Theme';
 
 type TestimonialSliderPropsType = {
   dataTestimonialCards: TestimonialCardsType[];
