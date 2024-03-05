@@ -35,10 +35,22 @@ const ListNetWork = styled.ul`
   flex-direction: column;
   justify-content: start;
   row-gap: 10px;
+  @media ${theme.media.tablet} {
+    gap: 20px;
+    }
+  @media ${theme.media.mobile} {
+    flex-direction: row;
+  }
+  }
 `;
 const ItemNetWork = styled.li`
   display: flex;
   column-gap: 12px;
+  @media ${theme.media.tablet} {
+    ${Text} {
+      display: none;
+    }
+  }
 `;
 const IconWrap = styled.div`
   width: 26px;
