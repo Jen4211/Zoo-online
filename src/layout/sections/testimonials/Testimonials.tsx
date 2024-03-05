@@ -78,6 +78,7 @@ const FlowerTestimonial = styled.img`
   position: absolute;
   bottom: -160px;
   right: -162px;
+  z-index: -1;
 `;
 
 const LineScrollWrap = styled.div`

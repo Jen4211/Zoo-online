@@ -17,10 +17,10 @@ export const CardAnimal: FC<CardAnimalPropsType> = (props: CardAnimalPropsType) 
       <Photo src={props.url} alt={props.name} />
       <WrapContent>
         <TextContainer>
-          <Text fontWeight={600} lineheight={'140%'}>
+          <Text fontWeight={600} lineHeight={'140%'}>
             {props.name}
           </Text>
-          <Text fontWeight={300} lineheight={'120%'}>
+          <Text fontWeight={300} lineHeight={'120%'}>
             {props.arial}
           </Text>
         </TextContainer>

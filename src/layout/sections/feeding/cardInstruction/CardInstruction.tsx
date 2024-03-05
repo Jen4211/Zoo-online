@@ -17,7 +17,7 @@ export const CardInstruction: FC<CardInstructionPropsType> = (props: CardInstruc
       <IconContainer>
         <Icon iconId={props.iconId} width={props.width} height={props.height} viewBox={props.viewBox} />
       </IconContainer>
-      <Text lineheight={'140%'} color={theme.colors.font.secondary}>
+      <Text lineHeight={'140%'} color={theme.colors.font.secondary}>
         {props.text}
       </Text>
     </StyledCardInstruction>

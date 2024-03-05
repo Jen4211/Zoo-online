@@ -5,12 +5,13 @@ type MenuPropsType = {
   menuItems: Array<string>;
 };
 export const Menu: FC<MenuPropsType> = (props: MenuPropsType) => {
+  const { menuItems } = props;
   return (
     <ListMenu>
-      {props.menuItems.map((i, index) => {
+      {menuItems.map((i, index) => {
         return (
           <ListItem key={index}>
-            <NavLink key={index}>{i}</NavLink>
+            <NavLink>{i}</NavLink>
           </ListItem>
         );
       })}
@@ -19,8 +20,9 @@ export const Menu: FC<MenuPropsType> = (props: MenuPropsType) => {
 };
 
 const ListMenu = styled.ul`
+  width: 100%;
   display: flex;
-  column-gap: 48px;
+  justify-content: space-between;
 `;
 const ListItem = styled.li``;
 const NavLink = styled.a`

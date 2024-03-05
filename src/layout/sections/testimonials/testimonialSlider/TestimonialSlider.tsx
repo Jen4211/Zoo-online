@@ -7,9 +7,10 @@ type TestimonialSliderPropsType = {
   dataTestimonialCards: TestimonialCardsType[];
 };
 export const TestimonialSlider: FC<TestimonialSliderPropsType> = (props) => {
+  const {dataTestimonialCards} = props
   return (
     <StyledTestimonialSlide>
-      {props.dataTestimonialCards.map((item, index) => {
+      {dataTestimonialCards.map((item, index) => {
         return (
           <SlidTestimonial
             text={item.text}

@@ -4,7 +4,7 @@ import { theme } from '@/styles/Theme';
 import { Logo } from '@/components/logo/Logo';
 import { DesktopMenu } from './desktopMenu/DesktopMenu';
 
-const dataMenuItems = ['About', 'Map', 'Zoos', 'Contact us', 'Designed by ©'];
+export const dataMenuItems = ['About', 'Map', 'Zoos', 'Contact us', 'Designed by ©'];
 export const Header: FC = () => {
   return (
     <StyledHeader>

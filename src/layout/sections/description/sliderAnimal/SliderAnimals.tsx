@@ -8,10 +8,12 @@ import { theme } from '@/styles/Theme';
 type SliderAnimalsPropsType = {
   dataAnimals: DataAnimalsType[];
 };
+
 export const SliderAnimals: FC<SliderAnimalsPropsType> = (props: SliderAnimalsPropsType) => {
+    const { dataAnimals } = props
   return (
     <StyledSliderAnimals>
-      {props.dataAnimals.slice(0, 6).map((item, index) => {
+      {dataAnimals.slice(0, 6).map((item, index) => {
         return <CardAnimal url={item.url} name={item.name} arial={item.arial} iconId={item.iconId} key={index} />;
       })}
       <PrefButtonContainer>

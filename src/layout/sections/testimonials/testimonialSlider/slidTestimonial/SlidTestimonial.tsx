@@ -18,14 +18,14 @@ export const SlidTestimonial: FC<SlidTestimonialPropsType> = (props) => {
         <HeaderSlidContainer>
           <Photo src={props.url} alt={'photo users'} width={'37px'} height={'37px'} />
           <HeaderSlid>
-            <Text lineheight={'120%'}>{props.userName}</Text>
-            <Text lineheight={'120%'} fontWeight={300} color={theme.colors.font.gray}>
+            <Text lineHeight={'120%'}>{props.userName}</Text>
+            <Text lineHeight={'120%'} fontWeight={300} color={theme.colors.font.gray}>
               {props.location + ' • ' + props.date}
             </Text>
           </HeaderSlid>
         </HeaderSlidContainer>
         <SlidContent>
-          <Text lineheight={'120%'} color={theme.colors.font.gray} fontWeight={300}>
+          <Text lineHeight={'120%'} color={theme.colors.font.gray} fontWeight={300}>
             {props.text}
           </Text>
         </SlidContent>
