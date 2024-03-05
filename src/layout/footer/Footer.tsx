@@ -12,16 +12,24 @@ import { theme } from '@/styles/Theme';
 export type DataNetWorkLinksType = {
   iconId: string;
   title?: string;
+  url?: string;
   width?: string;
   height?: string;
   viewBox?: string;
 };
 
 const dataNetWorkLinks: DataNetWorkLinksType[] = [
-  { iconId: 'f', title: 'Facebook', width: '8', height: '16', viewBox: '0 0 8 16' },
-  { iconId: 't', title: 'Twitter', width: '16', height: '14', viewBox: '0 0 16 14' },
-  { iconId: 'i', title: 'Instagram', width: '16', height: '16', viewBox: '0 0 16 16' },
-  { iconId: 'y', title: 'YouTube', width: '18', height: '13', viewBox: '0 0 18 13' },
+  { iconId: 'f', title: 'Facebook', url: 'https://www.facebook.com/', width: '8', height: '16', viewBox: '0 0 8 16' },
+  { iconId: 't', title: 'Twitter', url: 'https://twitter.com/', width: '16', height: '14', viewBox: '0 0 16 14' },
+  {
+    iconId: 'i',
+    title: 'Instagram',
+    url: 'https://www.instagram.com/',
+    width: '16',
+    height: '16',
+    viewBox: '0 0 16 16',
+  },
+  { iconId: 'y', title: 'YouTube', url: 'https://www.youtube.com/', width: '18', height: '13', viewBox: '0 0 18 13' },
 ];
 export const Footer: FC = () => {
   return (

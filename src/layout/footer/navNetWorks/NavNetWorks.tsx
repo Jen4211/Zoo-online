@@ -16,12 +16,14 @@ export const NavNetWorks: FC<NavNetWorksPropsType> = (props) => {
         {dataNetWorkLinks.map((i, index) => {
           return (
             <ItemNetWork key={index}>
-              <IconWrap>
-                <Icon iconId={i.iconId} width={i.width} height={i.height} viewBox={i.viewBox} />
-              </IconWrap>
-              <Text lineHeight={'140%'} color={theme.colors.font.primary}>
-                {i.title}
-              </Text>
+              <Link href={i.url} target={'_blank'}>
+                <IconWrap>
+                  <Icon iconId={i.iconId} width={i.width} height={i.height} viewBox={i.viewBox} />
+                </IconWrap>
+                <Text lineHeight={'140%'} color={theme.colors.font.primary}>
+                  {i.title}
+                </Text>
+              </Link>
             </ItemNetWork>
           );
         })}
@@ -43,7 +45,8 @@ const ListNetWork = styled.ul`
   }
   }
 `;
-const ItemNetWork = styled.li`
+const ItemNetWork = styled.li``;
+const Link = styled.a`
   display: flex;
   column-gap: 12px;
   @media ${theme.media.tablet} {

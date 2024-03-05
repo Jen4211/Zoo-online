@@ -5,10 +5,7 @@ import { FC } from 'react';
 export const Logo: FC = () => {
   return (
     <LogoContainer>
-      <MainTitle>
-        PetStory <br />
-        online
-      </MainTitle>
+      <MainTitle>PetStory online</MainTitle>
       <img src={bamboo} alt={'bamboo'} />
     </LogoContainer>
   );
